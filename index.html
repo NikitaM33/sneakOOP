@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      canvas {
+        margin-bottom: 1rem;
+        background: #333;
+      }
+
+      .currentScore,
+      .bestScoreDiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .currentScore h3,
+      .bestScoreDiv h3 {
+        margin-right: 2rem;
+      }
+
+      .score,
+      .bestScore {
+        width: 100px;
+        height: 40px;
+        padding: 0.5rem;
+        font-size: 2.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+        text-align: center;
+        background: #333;
+        border-radius: 5px;
+      }
+
+      .score {
+        margin-bottom: 2rem;
+      }
+
+      .popup {
+        position: absolute;
+        top: 50%;
+        left: 46%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 30%;
+        max-width: 40%;
+        height: 7rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        background: #555;
+        color: magenta;
+        border: 2px solid red;
+        border-radius: 0.5rem;
+        transform: translate(-50%, -50%);
+      }
+
+      .again {
+        background: rgb(102, 135, 183);
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="currentScore">
+      <h3>Current score</h3>
+    </div>
+    <canvas></canvas>
+    <div class="bestScoreDiv">
+      <h3>Best score</h3>
+    </div>
+
+    <script src="./Start.js"></script>
+    <script src="./Popup.js"></script>
+    <script src="./Score.js"></script>
+    <script src="./Food.js"></script>
+    <script src="./Snake.js"></script>
+    <script src="./canvas.js"></script>
+  </body>
+</html>
